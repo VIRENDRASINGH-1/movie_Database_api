@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+      "editor.formatOnSave": true,
+      "eslint.enable": true,
+      "eslint.alwaysShowStatus": true,
+      "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+  }
+    }
+}
