@@ -1,0 +1,45 @@
+$primary-color: #cde6f5;
+$secondary-color: #87919e;
+
+.card-body {
+  text-align: justify;
+}
+
+.button-open:hover {
+  background-color: #8c8c8c;
+}
+
+.button-open {
+  margin-top: auto;
+  color: white;
+  background-color: $secondary-color;
+
+  padding: 10px;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+.button-favourites {
+  color: white;
+  background-color: $secondary-color;
+
+  padding: 10px;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.button-favourites:disabled {
+  color: black;
+  background-color: $secondary-color;
+
+  padding: 10px;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+// .div.card-footer {
+//   width: 100%;
+//   align-self: flex-end;
+//   flex: 1 1 auto;
+//   flex-direction: row;
+// }

@@ -1,0 +1,28 @@
+$primary-color: #cde6f5;
+$secondary-color: #87919e;
+
+.login-container {
+  background-color: $primary-color;
+  border-radius: 4px;
+  margin-top: 150px;
+  width: 50%;
+  padding: 20px;
+}
+
+.button-login {
+  color: black;
+  background-color: $secondary-color;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 2px;
+  border-radius: 5px;
+}
+
+.button-login:hover {
+  background-color: #8c8c8c;
+}
+
+.login-navbar {
+  background-color: $primary-color;
+}

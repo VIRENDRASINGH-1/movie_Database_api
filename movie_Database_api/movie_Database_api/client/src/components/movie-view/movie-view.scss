@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&display=swap");
+$primary-color: #cde6f5;
+$secondary-color: #87919e;
+
+.movie-view {
+  font-family: "Cabin Condensed", sans-serif;
+  background-color: $primary-color;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 20px;
+}
+
+.back-button {
+  color: white;
+  background-color: $secondary-color;
+  border: 0;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #8c8c8c;
+}
+
+// .movie-description,
+// .movie-genre,
+// .movie-director {
+//   font-family: "Cabin Condensed", sans-serif;
+//   text-align: justify;
+//   padding: 10px;
+// }
+
+.movie-title {
+  font-family: "Cabin Condensed", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+.movie-poster {
+  margin: 20px;
+}

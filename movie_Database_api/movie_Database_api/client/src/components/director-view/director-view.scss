@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&display=swap");
+$primary-color: #cde6f5;
+$secondary-color: #87919e;
+$font-family: "Cabin Condensed", sans-serif;
+
+body {
+  font-family: "Cabin Condensed", sans-serif;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+h4 {
+  margin: 0 0 8px;
+}
+
+.director-view-card {
+  background-color: $primary-color;
+}
+
+.director-view {
+  text-justify: justify;
+  background-color: $primary-color;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 40px;
+}
+
+.back-from-director:hover {
+  background-color: #8c8c8c;
+}
+
+.back-from-director {
+  margin-top: auto;
+  font-family: "Cabin Condensed", sans-serif;
+  color: white;
+  background-color: $secondary-color;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 4px;
+  border-radius: 5px;
+}

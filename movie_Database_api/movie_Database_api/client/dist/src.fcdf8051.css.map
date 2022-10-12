@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAEA,UACE","file":"src.fcdf8051.css","sourceRoot":"../src","sourcesContent":["$color: steelblue;\n\n.my-1980s {\n  color: $color;\n}\n"]}

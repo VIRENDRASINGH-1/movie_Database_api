@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;700&display=swap");
+$primary-color: #cde6f5;
+$secondary-color: #87919e;
+
+.main-navbar {
+  background-color: $primary-color;
+}
+
+.card-container {
+  font-family: "Cabin Condensed", sans-serif;
+  background-color: $primary-color;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 50%;
+  padding: 10px 10px;
+}
+
+.logout-button {
+  margin-top: auto;
+  color: white;
+  background-color: $secondary-color;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 2px;
+  border-radius: 5px;
+}
+
+.profile-button {
+  margin-top: auto;
+  color: white;
+  background-color: $secondary-color;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+  margin-left: 2px;
+  border-radius: 5px;
+}

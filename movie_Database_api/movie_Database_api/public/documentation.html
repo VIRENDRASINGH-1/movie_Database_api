@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>| Wax on, wax off |</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+    <!-- Temporary Bootstrap job, until I figure out the overall style of the app and design it better then-->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-2">
+      <h1 class="text-center mt-1 mb-1">Wax on, wax off</h1>
+      <h2 class="text-center mt-2 mb-1">A 1980s Movie API</h2>
+      <br /><br />
+      <p>
+        The API will provide users with access to information about different movies, directors and genres. Users will be able to sign up,
+        update their personal information, and create a list of their favourite movies
+      </p>
+      <br />
+    </div>
+    <div class="container">
+      <table class="table table-sm table-responsive table-striped table-borderless">
+        <thead>
+          <tr>
+            <th scope="col">Request</th>
+            <th scope="col">URL</th>
+            <th scope="col">HTTP Method</th>
+            <th scope="col">Request body format</th>
+            <th scope="col">Response</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Return a list of ALL movies to the user</td>
+          <td>/movies</td>
+          <td>GET</td>
+          <td>None</td>
+          <td>JSON object holding data about all the movies</td>
+        </tr>
+        <tr>
+          <td>
+            Return data (description, genre, director, year, image URL) about a single movie by title to the user
+          </td>
+          <td>/movies/[Title]</td>
+          <td>GET</td>
+          <td>None</td>
+          <td>JSON object holding data about a single movie</td>
+        </tr>
+        <tr>
+          <td>Return data about a genre (description) by name</td>
+          <td>movies/genres/[Name]</td>
+          <td>GET</td>
+          <td>None</td>
+          <td>JSON object holding genre data about a single movie</td>
+        </tr>
+        <tr>
+          <td>
+            Return data about a director (Name, Born)
+          </td>
+          <td>movies/directors/[Name]</td>
+          <td>GET</td>
+          <td>None</td>
+          <td>JSON object holding data about a director</td>
+        </tr>
+        <tr>
+          <td>Allow new users to register</td>
+          <td>/users</td>
+          <td>POST</td>
+          <td>
+            JSON object holding user data, for example: {Username: 'IanFleming', Password: '******', Email: 'ian@fleming.com', Birthday :
+            '1981-07-07' }
+          </td>
+          <td>JSON object holding user data that was added, including an ID</td>
+        </tr>
+        <tr>
+          <td>
+            Allow users to update their user info (Username, Password, Email, Birthday)
+          </td>
+          <td>
+            /users/[Username]/[Password]/[Email]/[Birthday]
+          </td>
+          <td>PUT</td>
+          <td>None</td>
+          <td>Text message indicating relevant info was updated</td>
+        </tr>
+        <tr>
+          <td>Allow users to add a movie to a list of favourites by ID</td>
+          <td>/users/[Username]/Movies/[MovieID]</td>
+          <td>POST</td>
+          <td>
+            JSON object holding movie data, for example: { title: 'Red Heat', genre: 'action', director: 'Walter Hill', image URL: '****'',
+            year: '1988' }
+          </td>
+          <td>JSON object holding movie data that was added, including ID</td>
+        </tr>
+        <tr>
+          <td>Allow users to remove a movie from their list of favourites</td>
+          <td>/users/[Username]/Movies/[MovieID]</td>
+          <td>DELETE</td>
+          <td>None</td>
+          <td>Text message indicating that the relevant movie was deleted</td>
+        </tr>
+        <tr>
+          <td>Allow existing users to deregister</td>
+          <td>/users/[Username]</td>
+          <td>DELETE</td>
+          <td>None</td>
+          <td>Text message indicating that the relevant user was deleted</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
